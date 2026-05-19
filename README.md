@@ -179,3 +179,51 @@ Workflow file:
 
 ```text
 .github/workflows/unittests.yml
+
+
+# PostgreSQL Database Integration
+
+A PostgreSQL database named `bank_reviews` was created to store the cleaned and processed review data.
+
+## Database Schema
+
+The project uses two relational tables:
+
+### banks
+Stores metadata about the banking applications.
+
+Columns:
+- bank_id
+- bank_name
+- app_name
+
+### reviews
+Stores processed customer reviews and analytical results.
+
+Columns:
+- review_id
+- bank_id
+- review_text
+- rating
+- review_date
+- sentiment_label
+- sentiment_score
+- identified_theme
+- source
+
+## Technologies Used
+
+- PostgreSQL
+- pgAdmin
+- SQLAlchemy
+- psycopg2
+
+## Verification Queries
+
+The following verification checks were performed:
+
+- Count reviews per bank
+- Compute average rating per bank
+- Check for null values in key columns
+
+More than 1,500 processed reviews were successfully inserted into the database.

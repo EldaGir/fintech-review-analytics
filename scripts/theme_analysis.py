@@ -188,6 +188,7 @@ final_df = df[[
     "bank",
     "rating",
     "date",
+    "source",
     "bert_sentiment",
     "bert_score",
     "identified_theme"
